@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'JetBrains Mono', monospace;
+
+}
+body {
+  background-color: teal;
+
+}
+.menu {
+    color: white;
+    font-size: 20px;
+}
+.console {
+  position: absolute;
+  background-color: white;
+  left: 150px;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+}
