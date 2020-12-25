@@ -1,7 +1,6 @@
 let menuOpen = 0;
 function overmenu(x) {
   x.style.backgroundColor = "black";
-  console.log(x)
 }
 
 function outmenu(x) {
@@ -18,4 +17,7 @@ function openmenu(x) {
     document.getElementById("console").style.left = "0px";
     menuOpen = 0;
   }
+}
+function chng(x) {
+  console.log(x);
 }
