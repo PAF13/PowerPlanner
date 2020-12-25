@@ -1,9 +1,4 @@
-jQuery(document).ready(function() {
+$(function(){
 
-	// Handling the FAQ question click
-	jQuery(".menu div").click(function() {
-
-		jQuery(this).fadeOut();
-
-	});
+  $("#console").hide(500);
 });
