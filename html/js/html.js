@@ -1,25 +1,9 @@
-let menuOpen = 0;
-let currentPage;
-function overmenu(x) {
-  x.style.backgroundColor = "black";
-}
+jQuery(document).ready(function() {
 
-function outmenu(x) {
-  x.style.backgroundColor = "teal";
-}
+	// Handling the FAQ question click
+	jQuery(".menu div").click(function() {
 
-function openmenu(x) {
-  document.getElementById("console").style.transition = "0.7s";
-  if(menuOpen == 0) {
-    document.getElementById("console").style.left = "200px";
-    menuOpen = 1;
-  }
-  else {
-    document.getElementById("console").style.left = "0px";
-    menuOpen = 0;
-  }
-}
-function chng(x) {
-  currentPage = (".console div i");
-  console.log(currentPage);
-}
+		jQuery(this).fadeOut();
+
+	});
+});
