@@ -1,4 +1,5 @@
 let menuOpen = 0;
+let currentPage;
 function overmenu(x) {
   x.style.backgroundColor = "black";
 }
@@ -19,5 +20,6 @@ function openmenu(x) {
   }
 }
 function chng(x) {
-  console.log(x);
+  currentPage = (".console div i");
+  console.log(currentPage);
 }
