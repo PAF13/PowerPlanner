@@ -1,0 +1,34 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.date {
+
+  font-size: 40px;
+}
+.weekdays {
+  display: flex;
+}
+.calendar {
+background-color: #00f6f6;
+  width: 80vw;
+  height: 100vh;
+}
+.weekdays div {
+  border: 1px solid black;
+  width: calc(100% / 7);
+  height: 1.5rem;
+}
+.day {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.day div{
+
+    width: calc(80vw / 7);
+    height: calc(50vw / 5);
+    border: 1px solid black;
+}
