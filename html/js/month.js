@@ -46,27 +46,8 @@ const months = [
 });
 function update() {
   $(".date div").html(viewDate.getFullYear() + " | " + months[month]);
-  let days = "";
+  for (let x = 0; x < 42; x++) {
 
-for (let x = firstDayIndex; x > 0; x--) {
-  days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
-}
-
-for (let i = 1; i <= lastDay; i++) {
-  if (
-    i === new Date().getDate() &&
-    date.getMonth() === new Date().getMonth()
-  ) {
-    days += `<div class="today">${i}</div>`;
-  } else {
-    days += `<div>${i}</div>`;
+    $(".day").append(`<div class="">${x}</div>`);
   }
-}
-
-for (let j = 1; j <= nextDays; j++) {
-  days += `<div class="next-date">${j}</div>`;
-  monthDays.innerHTML = days;
-}
-};
-
 }
